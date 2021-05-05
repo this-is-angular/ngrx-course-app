@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Electricity bills"
+    },
+    {
+      "id": 1,
+      "name": "Car repair"
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "description": "Food for week",
+      "categoryId": 1,
+      "amount": 700
+    },
+    {
+      "id": 2,
+      "description": "Monthly electricity bill",
+      "categoryId": 2,
+      "amount": 300
+    }
+  ]
+}
