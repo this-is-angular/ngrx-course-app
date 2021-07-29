@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Category } from 'src/app/state/models';
 
 @Component({
@@ -8,4 +8,15 @@ import { Category } from 'src/app/state/models';
 })
 export class CategoryListPresenterComponent {
   @Input() categories: Category[] = [];
+  @Output() categoryAdded = new EventEmitter<Category>();
+  @Output() categoryDeleted = new EventEmitter<string>();
+  newCategoryName = '';
+
+  addCategory() {
+    this.categoryAdded.emit({name: this.newCategoryName});
+  }
+
+  deleteCategory(categoryName: string) {
+    this.categoryDeleted.emit(categoryName);
+  }
 }

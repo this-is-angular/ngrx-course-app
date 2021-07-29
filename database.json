@@ -11,6 +11,9 @@
     {
       "id": 1,
       "name": "Car repair"
+    },
+    {
+      "id": 3
     }
   ],
   "expenses": [

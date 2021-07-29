@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +25,9 @@ import { CategoryListPresenterComponent } from './category-list/category-list-pr
     BrowserAnimationsModule,
     StoreModule.forRoot({categories: categoryReducer}),
     MatListModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
