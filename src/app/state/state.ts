@@ -9,7 +9,5 @@ export interface AppState {
 }
 
 export const initialState: CategoryState = {
-  list: [
-    { name:  'Food' },
-  ],
+  list: [],
 };

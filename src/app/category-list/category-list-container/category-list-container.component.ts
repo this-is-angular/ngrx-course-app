@@ -29,8 +29,8 @@ export class CategoryListContainerComponent implements OnInit {
     this.store.dispatch(addCategory({payload: category})); // this is where magic happens
   }
 
-  deleteCategory(categoryName: string) {
-    this.store.dispatch(deleteCategory({payload: categoryName}));
+  deleteCategory(categoryId: number) {
+    this.store.dispatch(deleteCategory({payload: categoryId}));
   }
 
 }

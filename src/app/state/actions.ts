@@ -4,7 +4,7 @@ import { Category } from './models';
 export const addCategory = createAction('[Category List] Add Category', props<{payload: {name: string}}>());
 export const deleteCategory = createAction('[Category List] Delete Category', props<{payload: number}>());
 
-export const addCategorySuccess = createAction('[Category List] Add Category Success', props<{payload: Category}>());
+export const addCategorySuccess = createAction('[Category List] Add Category Success', props<{payload: {data: Category, message?: string}}>());
 
 export const addCategoryError = createAction('[Category List] Add Category Error');
 
@@ -12,5 +12,5 @@ export const categoriesListLoaded = createAction('[Category List] Categories Lis
 export const loadCategoriesSuccess = createAction('[Category List] Load Categories Success', props<{payload: Category[]}>());
 export const loadCategoriesError = createAction('[Category List] Load Categories Error');
 
-export const deleteCategorySuccess = createAction('[Category List] Delete Category Success', props<{payload: number}>());
+export const deleteCategorySuccess = createAction('[Category List] Delete Category Success', props<{payload: {data: number, message?: string}}>());
 export const deleteCategoryError = createAction('[Category List] Delete Category Error');

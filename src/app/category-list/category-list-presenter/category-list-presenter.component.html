@@ -1,7 +1,7 @@
 <mat-list>
   <mat-list-item *ngFor="let category of categories">
     {{ category.name }}
-    <button mat-button (click)="deleteCategory(category.name)">Delete</button>
+    <button mat-button (click)="deleteCategory(category.id)">Delete</button>
   </mat-list-item>
 </mat-list>
 <mat-form-field>
